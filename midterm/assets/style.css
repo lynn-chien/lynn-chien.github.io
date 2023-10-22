@@ -1,0 +1,280 @@
+@font-face {
+    font-family: Crealen;
+    src: url(CREALEN.otf);
+}
+
+@font-face {
+    font-family: Rolaxs;
+    src: url(Rolaxs.ttf);
+}
+
+@font-face {
+    font-family: Viberate;
+    src: url(VIBERATE.ttf);
+}
+
+@font-face {
+    font-family: Bakery;
+    src: url(Bakery.ttf);
+}
+
+@font-face {
+    font-family: Laachir;
+    src: url(LaachirDeeper-Regular.ttf);
+}
+
+body {
+    font-family: Viberate;
+    font-size: xx-large;
+}
+
+.e {
+    font-family: Crealen;
+}
+
+.navbar {
+    /* background-color: #3a2626; */
+    font-family: Laachir;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add padding around the navbar */
+    height: 40px;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 60px; /* Push the logo to the left by taking up available space */
+    margin-left: 60px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px; /* Adjust the height of the logo as needed */
+    width: auto; /* Maintain the aspect ratio while resizing */
+    display: block; /* Remove any extra spacing below the image */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make the list items a flex container */
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #3a2626;
+    transition: background-color 0.5s linear, color 0.5s linear; /* Adjust transition duration and timing function */
+}
+
+.navbar a:hover {
+    background-color: #3a2626;
+    color: beige;
+}
+
+.content {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.8em; /* Adjust the font size as needed */
+    margin: 0;
+    color:#3a2626;
+    border-radius: 30px; 
+    text-align: center;
+    padding: 20px;
+}
+
+.e img {
+    width: 35%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    border-radius: 50%; /* Ensure the image itself is circular */
+    opacity: 80%;
+    transition: opacity 0.3s ease;
+}
+
+.e img:hover {
+    opacity: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    color: #f5f5dc;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    margin: 10px; /* Add some margin for separation */
+    line-height: 1;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-section img {
+    max-width: 55%; /* Adjust the width of the image */
+    height: auto;
+    border-radius: 15px; /* Add rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 40px; /* Increase the margin between image and text */
+    margin-left: 40px;
+    opacity: 80%;
+    transition: opacity 0.3s ease;
+}
+
+.image-section img:hover {
+    opacity: 100%;
+}
+
+hr {
+    border: none; /* Remove the default border */
+    border-top: 2px solid #3a2626; /* Add a custom border color and width */
+    margin: 20px 0; /* Add some margin for separation */
+}
+
+.image-section2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-section2 {
+    flex: 1;
+    padding-right: 20px; /* Adjust padding to create space on the right for the image */
+    margin-left: 40px;
+}
+
+.text-section2 h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.image-section2 img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Increase the margin between text and image */
+    opacity: 80%;
+    transition: opacity 0.3s ease;
+}
+
+.image-section2 img:hover {
+    opacity: 100%;
+}
+
+.image-section3 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-section3 img {
+    max-width: 55%; /* Adjust the width of the image */
+    height: auto;
+    border-radius: 15px; /* Add rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 40px; /* Increase the margin between image and text */
+    margin-left: 40px;
+    opacity: 80%;
+    transition: opacity 0.3s ease;
+}
+
+.image-section3 img:hover {
+    opacity: 100%;
+}
+
+.l-text {
+    line-height: 1;
+}
+
+footer {
+    background-color:#3a2626;
+    color: beige;
+    text-align: center;
+    padding: 10px;
+    font-family: Laachir;
+    line-height: 1;
+}
+
+footer a {
+    color: beige;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* FOR menu.html */
+
+.m {
+    font-family: Viberate;
+}
+
+.menu-container {
+    display: flex;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h3 {
+    font-size: 1.2em;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Laachir;
+}
+
+.menu-item-content {
+    display: flex;
+}
+
+.menu-item img {
+    height: 80px;
+    width: auto;
+}
+
+.check-menu {
+    font-size: 50px;
+    text-align: center;
+    color: #3a2626;
+}
+
+.check-menu a {
+    text-decoration: none;
+    color:#3a2626;
+    text-align: center;
+    font-size: 80px;
+}
