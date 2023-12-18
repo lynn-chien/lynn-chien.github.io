@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/final/static/css/main.75012091.css",
+    "main.js": "/final/static/js/main.4569a9ca.js",
+    "static/js/787.227b7bd9.chunk.js": "/final/static/js/787.227b7bd9.chunk.js",
+    "static/media/galapagosColored.png": "/final/static/media/galapagosColored.57cf45c6e21c892239b6.png",
+    "static/media/galapagosSketch.png": "/final/static/media/galapagosSketch.0cca2ffa2cc5f399991a.png",
+    "static/media/dandelions.png": "/final/static/media/dandelions.428e7c1efb0920007f93.png",
+    "static/media/hermannsColored.png": "/final/static/media/hermannsColored.660236ee12c1b7f1c6b5.png",
+    "static/media/romaine.png": "/final/static/media/romaine.750388bfeee2dbd19511.png",
+    "static/media/strawberryLeaf.png": "/final/static/media/strawberryLeaf.29af2498b57cf19087c0.png",
+    "static/media/indianstarColored.png": "/final/static/media/indianstarColored.86b9989a13836e9b15d5.png",
+    "static/media/pancakeColored.png": "/final/static/media/pancakeColored.5a952da70b1d44fcfd4b.png",
+    "static/media/nuts.png": "/final/static/media/nuts.4ff21fbeded056637829.png",
+    "static/media/hibiscus.png": "/final/static/media/hibiscus.e5c61866237cec18eabd.png",
+    "static/media/hermannsSketch.png": "/final/static/media/hermannsSketch.d95a22a6f0cfa4c0e8f4.png",
+    "static/media/indianstarSketch.png": "/final/static/media/indianstarSketch.c72d50c0787c1536a53b.png",
+    "static/media/pricklyPear.png": "/final/static/media/pricklyPear.6f5a6393dd08256c2d30.png",
+    "static/media/pancakeSketch.png": "/final/static/media/pancakeSketch.51a8b87c83ec85a720b6.png",
+    "static/media/orchardGrass.png": "/final/static/media/orchardGrass.ac743a6733ed4b3e1286.png",
+    "static/media/desertColored.png": "/final/static/media/desertColored.fb1a9620945c9ea0e88f.png",
+    "static/media/rosePetals.png": "/final/static/media/rosePetals.5652ea59870d8e3f597d.png",
+    "static/media/bermudaGrass.png": "/final/static/media/bermudaGrass.2f5c213fc3235231a89e.png",
+    "static/media/honeysuckle.png": "/final/static/media/honeysuckle.1181130bb1f73b31500e.png",
+    "static/media/watercress.png": "/final/static/media/watercress.692b6b9c61a1361ab396.png",
+    "static/media/bellPeppers.png": "/final/static/media/bellPeppers.fd80ce18da0e550d3352.png",
+    "static/media/desertSketch.png": "/final/static/media/desertSketch.b866aa8d6dbafae04192.png",
+    "static/media/freshClover.png": "/final/static/media/freshClover.713fb150cb10510ff8b1.png",
+    "static/media/bambooStalks.png": "/final/static/media/bambooStalks.f475c52c2408d7fecb11.png",
+    "static/media/carrot.png": "/final/static/media/carrot.4773c3427b451cbb64f4.png",
+    "static/media/rositalics.ttf": "/final/static/media/rositalics.261596ae5f279e1fe043.ttf",
+    "static/media/sulatko.ttf": "/final/static/media/sulatko.1abc2c1baa8b7d65765d.ttf",
+    "index.html": "/final/index.html",
+    "main.75012091.css.map": "/final/static/css/main.75012091.css.map",
+    "main.4569a9ca.js.map": "/final/static/js/main.4569a9ca.js.map",
+    "787.227b7bd9.chunk.js.map": "/final/static/js/787.227b7bd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75012091.css",
+    "static/js/main.4569a9ca.js"
+  ]
+}
