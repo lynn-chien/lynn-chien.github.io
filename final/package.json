@@ -1,5 +1,5 @@
 {
-  "homepage": "https://lynn-chien.github.io",
+  "homepage": "https://lynn-chien.github.io/final",
   "name": "final",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/lynn-chien.git"
+    "deploy": "gh-pages -d build -r https://github.com/lynn-chien/lynn-chien.io.git"
   },
   "eslintConfig": {
     "extends": [
