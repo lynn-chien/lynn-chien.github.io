@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Sulatko;
+  src: url(sulatko.ttf);
+}
+
+@font-face {
+  font-family: Rositalics;
+  src: url(rositalics.ttf);
+}
+
+* {
+  caret-color: transparent;
+}
+
+.App {
+  font-family: 'Sulatko';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: scroll-between;
+  min-height: 100vh;
+  background-color:antiquewhite;
+}
+
+.header {
+  font-size: 6em;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3B2E21;
+  background-color: transparent;
+}
+
+.tortoise-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tortoise-image {
+  width: 30vw;
+  height: auto;
+}
+
+.tortoise-type, .tortoise-facts {
+  text-align: center;
+  color:rgba(106, 87, 69, 0.801);
+  font-family: "Rositalics";
+  height: 3vh;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.App .tortoise-type:not(:empty), 
+.App .tortoise-facts:not(:empty) {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tortoise-type {
+  font-size: 1em;
+  margin-top: 43vh;
+}
+
+.tortoise-facts {
+  margin-top: 13vh;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40vh;
+  margin-bottom: 10vh;
+}
+

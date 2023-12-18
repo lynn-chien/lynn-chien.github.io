@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Rositalics;
+    src: url(../rositalics.ttf);
+}
+
+.carousel-image {
+    width: 12%;
+    object-fit: cover;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+.carousel-prev-button, .carousel-next-button {
+    font-family: "Rositalics";
+    color: #3B2E21;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: antiquewhite;
+}
+
+.carousel-prev-button {
+    position: absolute;
+    left: 70vh;
+}
+
+.carousel-next-button {
+    position: absolute;
+    right: 70vh;
+}
+ 
+.carousel-text {
+    font-size: 1em;
+    font-family: "Rositalics";
+    text-align: center;
+}
+
+.carousel-caption {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

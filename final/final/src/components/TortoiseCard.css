@@ -1,0 +1,43 @@
+.tortoise-card-container {
+    position: relative;
+  }
+
+.tortoise-card {
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+.tortoise-card:hover {
+    transform: scale(1.1);
+}
+
+.tortoise-facts {
+    padding: 2vh;
+}
+  
+.tortoise-card.desert {
+    top: 25vh;
+    left: 30vh;
+}
+  
+  .tortoise-card.galapagos {
+    top: 1vh;
+    left: 70vh;
+  }
+  
+  .tortoise-card.hermann {
+    top: 25vh;
+    left: 115vh;
+  }
+  
+  .tortoise-card.indian-star{
+    top: 55vh;
+    left: 100vh;
+  }
+  
+  .tortoise-card.pancake {
+    top: 52vh;
+    left: 35vh;
+  }
+  
+  
