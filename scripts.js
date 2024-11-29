@@ -188,3 +188,14 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     });
   });
   
+history.pushState({}, '', 'new-url'); // Change the URL without reloading
+
+window.addEventListener('popstate', (event) => {
+    // Handle the back/forward navigation
+    console.log('Back or forward button pressed');
+});
+
+const redirect = window.location.pathname;
+if (redirect !== '/') {
+    window.location.href = '/#' + redirect;
+}
