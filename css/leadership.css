@@ -1,0 +1,89 @@
+/* Leadership Section */
+
+body {
+    font-family: 'Amiko', sans-serif;
+}
+
+.leadership {
+    max-width: 1000px; /* Constrain section width */
+    margin: 50px auto; /* Center the section horizontally */
+    padding: 20px;
+}
+
+.leadership h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #926F78;
+    text-align: left; /* Align to the left */
+    font-family: 'Flamenco', system-ui;
+}
+
+.leadership li {
+    color: #666;
+}
+
+.leadership p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+    text-align: left; /* Align to the left */
+}
+
+/* Individual Organizations */
+.organization {
+    padding: 20px 0;
+}
+
+.organization h2 {
+    font-size: 24px;
+    color: #9F8189;
+    margin-bottom: 5px;
+    text-align: left; /* Align to the left */
+}
+
+.organization .role {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left; /* Align to the left */
+}
+
+.organization .description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
+}
+
+.organization a {
+    font-size: 16px;
+    color: #9F8189;
+    text-decoration: none;
+    text-align: left; /* Align to the left */
+    display: inline-block; /* Ensures it stays on its line */
+    transition: color 0.3s ease;
+}
+
+.organization a:hover {
+    color: #F3ABB6;
+}
+
+/* Divider Line */
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0; /* Light gray line */
+    margin: 20px 0;
+}
+
+.go-back {
+    color: #9F8189;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.go-back:hover {
+    color: #F3ABB6;
+    transition: ease-in 0.3s;
+}

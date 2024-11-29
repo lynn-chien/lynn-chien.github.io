@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Flamenco:wght@300;400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.navigation-bar {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Align items vertically */
+    width: calc(100% - 40px); /* Reduce total width slightly for padding */
+    max-width: 1100px; /* Optional: Limit the navbar width for better appearance */
+    margin: 0 auto; /* Center the navbar horizontally */
+    height: 80px; /* Height of the navbar */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+.logo {
+    margin-top: 20px;
+    max-height: 80px;
+}
+
+.navigation-bar a {
+    margin-left: 20px; /* Spacing between links */
+    text-decoration: none; /* Remove underline from links */
+    color: #A2A2A2;
+    font-size: 16px; /* Link font size */
+    line-height: 80px; /* Vertically align links */
+    font-family: 'Amiko', sans-serif;
+}
+
+.navigation-bar a:hover {
+    color: #F3ABB6; /* Change color on hover (optional) */
+    transition: color 0.5s; /* Smooth transition for hover */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+.navigation-bar a.active {
+    color: #F3ABB6; /* Highlight active link */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+/* Page fade-out effect */
+body {
+    opacity: 1; /* Start fully visible */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fade-out */
+}
+
+body.fade-out {
+    opacity: 0; /* Fades out */
+}

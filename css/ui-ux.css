@@ -1,0 +1,126 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    font-family: 'Amiko', sans-serif;
+}
+
+h4 {
+    color: #A2A2A2;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #9F8189;
+}
+
+a:hover {
+    color: #F3ABB6;
+    transition: ease-in 0.3s;
+}
+
+.projects-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.projects-container h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Flamenco', system-ui;
+    font-weight: 800;
+    color: #926F78;
+}
+
+.projects-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Individual Project Items */
+.project-item {
+    display: flex; /* Horizontal alignment of details and carousel */
+    gap: 40px; /* Space between text and carousel */
+    margin-bottom: 40px; /* Space between project rows */
+    padding: 20px;
+}
+
+/* Details Section */
+.project-details {
+    flex: 1; /* Take up 50% of the container */
+}
+
+.project-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #9F8189;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Carousel Section */
+.project-carousel {
+    flex: 1; /* Take up 50% of the container */
+    position: relative;
+    overflow: hidden; /* Hide overflowing slides */
+    border-radius: 8px;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth slide effect */
+}
+
+.carousel-slides img {
+    min-width: 100%; /* Each image takes full width of the container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.go-back {
+    font-size: 15px;
+}

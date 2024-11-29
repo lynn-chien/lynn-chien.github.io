@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Amiko', sans-serif;
+}
+
+h2 {
+    font-family: 'Flamenco', system-ui;
+}
+
+h4 {
+    font-weight: 400;
+    color: #A2A2A2;
+}
+
+.experiences-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Individual Experience Section */
+.experience {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 40px; /* Space between sections */
+    padding: 80px;
+}
+
+/* Content (Title and Description) */
+.experience-content {
+    flex: 1; /* Take up equal space */
+    padding-right: 20px; /* Add space between content and image */
+}
+
+.experience-content h2 {
+    font-size: 50px;
+    margin: 0 0 10px; /* Add space below the title */
+    color: #9F8189;
+}
+
+.experience-content p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Image Section */
+.experience-image {
+    flex: 1; /* Take up equal space */
+    text-align: center; /* Center the image */
+}
+
+.experience-image img {
+    max-width: 80%; /* Scale image to fit */
+}
+
+.button-container {
+    position: relative; /* Enable positioning for the flowers relative to this container */
+    display: inline-block; /* Shrink-wrap the button and flowers */
+    max-width: 190px;
+}
+
+.about-button {
+    display: inline-block;
+    margin-top: 10px; /* Add spacing above the button */
+    padding: 10px 20px;
+    background-color: #926F78; /* Button background */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative; /* Keep button in the normal flow */
+    z-index: 1; /* Ensure button stays above the cat */
+    width: 150px; /* Set a fixed width */
+    text-align: center; /* Ensure text is centered */
+    overflow: hidden; /* Hide any parts of flowers outside the button */
+}
+
+.about-button:hover {
+    background-color: #9F8189;
+    transition: background-color 0.5s; /* Smooth transition for hover */
+}
+
+.flower {
+    position: absolute; /* Position flowers relative to the button-container */
+    width: 30px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0; /* Hidden by default */
+    transform: scale(0.5); /* Start small */
+    transition: opacity 0.4s, transform 0.4s ease-in-out;
+    pointer-events: none; /* Prevent the flowers from interfering with button clicks */
+    z-index: 1;
+}
+
+/* Top-right flower */
+.flower.top-right {
+    top: -5px; /* Position slightly above the button */
+    right: -10px; /* Position slightly to the right of the button */
+}
+
+/* Bottom-left flower */
+.flower.bottom-left {
+    bottom: -5px; /* Position slightly below the button */
+    left: -20px; /* Position slightly to the left of the button */
+}
+
+/* Hover effect */
+.button-container:hover .flower {
+    opacity: 1; /* Show flowers */
+    transform: scale(1); /* Grow to full size */
+}

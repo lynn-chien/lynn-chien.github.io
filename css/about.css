@@ -1,0 +1,66 @@
+/* General Page Styling */
+.nonav {
+    margin: 0;
+    font-family: 'Amiko', sans-serif; /* Clean and fun font */
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Flamenco', system-ui;
+    color: #926F78;
+}
+
+/* Full-Width Image */
+.about-image img {
+    width: 100%; /* Stretch image across the screen */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the width properly */
+}
+
+/* Content Section */
+.about-content {
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between text and drawing */
+    align-items: center; /* Center-align text and drawing vertically */
+    max-width: 1000px; /* Limit the content width */
+    margin: 40px auto; /* Center content and add spacing */
+    padding: 0 20px; /* Add padding for smaller screens */
+    gap: 30px; /* Add space between text and drawing */
+}
+
+/* Left Section: Name and Information */
+.about-info {
+    flex: 1; /* Allow the text to take up available space */
+}
+
+.about-info p {
+    font-size: 15px; /* Clean text size */
+    line-height: 1.6; /* Improve readability */
+    color: #666; /* Subtle gray for the text */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Right Section: Drawing */
+.about-drawing {
+    max-width: 400px; /* Limit the width of the drawing */
+}
+
+.about-drawing img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack text and drawing vertically */
+        text-align: center; /* Center-align the text */
+        gap: 40px; /* Increase gap for better spacing */
+    }
+
+    .about-drawing {
+        max-width: 100%; /* Allow full-width drawing on small screens */
+    }
+}
+

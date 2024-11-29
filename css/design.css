@@ -1,0 +1,96 @@
+/* Section Styling */
+
+body {
+    font-family: 'Amiko', sans-serif;
+}
+
+.graphic-design {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.graphic-design h1 {
+    font-size: 50px;
+    color: #926F78;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Flamenco', system-ui;
+    font-weight: bold;
+}
+
+.graphic-design p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Row Styling */
+.design-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between items */
+    align-items: center; /* Center-align content vertically */
+    margin-bottom: 40px; /* Space between rows */
+}
+
+/* Left Column (Text) */
+.design-details {
+    flex: 1;
+    text-align: left;
+}
+
+.design-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #9F8189;
+}
+
+.design-details p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.design-details a {
+    font-size: 16px;
+    color: #9F8189;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.design-details a:hover {
+    color: #F3ABB6;
+}
+
+/* Right Column (Image) */
+.design-image {
+    flex: 1;
+    text-align: center;
+}
+
+.design-image img {
+    max-width: 100%; /* Ensure image fits the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Divider Line */
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.go-back {
+    color: #9F8189;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.go-back:hover {
+    color: #F3ABB6;
+    transition: ease-in 0.3s;
+}

@@ -1,0 +1,64 @@
+/* General Styles */
+.non-nav {
+    margin: 0;
+    font-family: 'Amiko', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container */
+.connect-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px; /* Limit the width of the content */
+}
+
+/* Drawing Above Title */
+.drawing {
+    width: 300px; /* Adjust size of the drawing */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Title */
+.connect-container h1 {
+    font-family: "Flamenco", system-ui;
+    font-weight: bold;
+    font-size: 50px; /* Larger title */
+    color: #926F78; /* Blue title color */
+    margin-bottom: 10px; /* Spacing below title */
+}
+
+.desc {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Row of Icons */
+.connect-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 0px; /* Space between icons */
+}
+
+.connect-icons img {
+    max-width: 30%;
+}
+
+/* Text Below Icon */
+.connect-text {
+    margin: 10px 0 0; /* Space above the text */
+    font-size: 12px; /* Smaller text size */
+    color: #A2A2A2; /* Subtle gray text */
+    opacity: 0; /* Make text invisible */
+    visibility: hidden; /* Remove from accessibility tree */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth appearance */
+}
+
+/* Show Text on Hover */
+.connect-item:hover .connect-text {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Ensure it’s interactable */
+}

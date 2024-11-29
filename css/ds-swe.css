@@ -1,0 +1,157 @@
+/* General Styling */
+.nonav {
+    margin: 0;
+    font-family: 'Amiko', sans-serif;
+    color: #666; /* Neutral text color */
+    padding: 20px;
+}
+
+/* Container */
+.projects-container {
+    max-width: 1000px; /* Limit overall width */
+    margin: 0 auto; /* Center container */
+    text-align: center;
+}
+
+.projects-container h1 {
+    font-size: 50px; /* Large title */
+    color: #926F78; /* Blue color for title */
+    font-family: 'Flamenco', system-ui;
+    margin-bottom: 10px;
+}
+
+.projects-container p {
+    font-size: 18px; /* Subtitle size */
+    color: #666; /* Subtle gray */
+    margin-bottom: 30px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between projects */
+    justify-items: center; /* Center-align items within each column */
+}
+
+/* Individual Project */
+.project-item {
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure content stays within bounds */
+    display: flex;
+    flex-direction: column; /* Stack screenshot and details */
+}
+
+/* Screenshot */
+.project-item img {
+    width: 100%; /* Full-width image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image fits nicely */
+}
+
+/* Project Details */
+.project-details {
+    padding: 20px; /* Space around text */
+    text-align: center;
+}
+
+.project-details h2 {
+    font-size: 20px; /* Project title */
+    margin-bottom: 10px;
+    color: #9F8189; /* Bright blue */
+}
+
+.project-details p {
+    font-size: 15px; /* Project description */
+    line-height: 1.5; /* Improve readability */
+    color: #555; /* Subtle gray */
+    margin: 0;
+}
+
+/* Project without Screenshot */
+.project-item.no-screenshot {
+    justify-content: center; /* Center-align text if no screenshot */
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        padding: 10px;
+    }
+
+    .projects-grid {
+        gap: 20px; /* Reduce spacing for small screens */
+    }
+
+    .project-item {
+        margin: 0 auto;
+    }
+}
+
+
+.project-tags span {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    color: #333;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%; /* Full width of the project item */
+    overflow: hidden; /* Hide other images */
+    z-index: 1; /* Ensure the carousel is above other elements */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Slides */
+.carousel-slides {
+    display: flex; /* Arrange images in a row */
+    width: 100%; /* Full width */
+    transition: transform 0.5s ease-in-out; /* Smooth slide animation */
+}
+
+/* Individual Image */
+.carousel-slides img {
+    width: 100%; /* Match the width of the carousel */
+    object-fit: cover; /* Ensure images are properly cropped */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    max-width: 100%; /* Scale images to fit width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+

@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    font-family: 'Amiko', sans-serif;
+}
+
+.notnav {
+    margin: 0;
+    font-family: 'Amiko', sans-serif;
+    display: flex; /* Flexbox to center carousel */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.carousel-header {
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Add space below the description */
+}
+
+.carousel-header h1 {
+    font-size: 40px; /* Large title */
+    color: #926F78; /* Optional: Blue color for title */
+    margin-bottom: 10px; /* Space between title and description */
+    font-family: 'Flamenco', system-ui;
+}
+
+.carousel-header p {
+    font-size: 12px; /* Smaller description text */
+    color: #666; /* Subtle gray color */
+    margin: 10; /* No extra margins */
+}
+
+.carousel-header a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #9F8189;
+    font-weight: bold;
+}
+
+.carousel-header a:hover {
+    color: #F3ABB6;
+    transition: ease-in 0.3s;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    width: 600px; /* Set a fixed width for the carousel */
+    height: 400px; /* Set a fixed height for the carousel */
+    overflow: hidden; /* Hide images outside the container */
+    background-color: #fff; /* Background for fallback images */
+}
+
+/* Slides Container */
+.carousel-slides {
+    display: flex; /* Lay images in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+/* Images */
+.carousel-slides img {
+    width: 600px; /* Each image matches the width of the container */
+    height: 400px; /* Each image matches the height of the container */
+    object-fit: contain; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* Carousel Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%; /* Align vertically with the center of the carousel */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Transparent button background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons appear above images */
+}
+
+/* Positioning Buttons Outside */
+.carousel-button.prev {
+    left: 10px; /* Move outside the carousel on the left */
+}
+
+.carousel-button.next {
+    right: 10px; /* Move outside the carousel on the right */
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
