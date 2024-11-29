@@ -187,13 +187,3 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       updateCarousel();
     });
   });
-
-window.addEventListener('popstate', (event) => {
-    // Handle the back/forward navigation
-    console.log('Back or forward button pressed');
-});
-
-const redirect = window.location.pathname;
-if (redirect !== '/') {
-    window.location.href = '/#' + redirect;
-}
