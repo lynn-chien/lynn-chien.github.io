@@ -2,24 +2,23 @@
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Flamenco:wght@300;400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* General Navbar Styling */
 .navigation-bar {
     display: flex; /* Flexbox for alignment */
     justify-content: space-between; /* Space between logo and links */
     align-items: center; /* Align items vertically */
     width: calc(100% - 40px); /* Reduce total width slightly for padding */
-    /* max-width: 1100px; */
     margin: 0 auto; /* Center the navbar horizontally */
     height: 80px; /* Height of the navbar */
     padding: 0 20px; /* Add some horizontal padding */
 }
 
 .logo {
+    max-height: 80px; /* Scale the logo for better fit */
+    max-width: 100%;
     margin-top: 20px;
-    max-height: 80px;
-    max-width: 100%; /* Prevent overflow */
 }
 
 .navigation-bar a {
@@ -32,7 +31,7 @@
 }
 
 .navigation-bar a:hover {
-    color: #F3ABB6; /* Change color on hover (optional) */
+    color: #F3ABB6; /* Change color on hover */
     transition: color 0.5s; /* Smooth transition for hover */
     font-weight: bold; /* Optional: Make it bold */
 }
@@ -40,6 +39,37 @@
 .navigation-bar a.active {
     color: #F3ABB6; /* Highlight active link */
     font-weight: bold; /* Optional: Make it bold */
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none; /* Hide on larger screens */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navigation-bar {
+        flex-direction: column; /* Stack logo and links */
+        align-items: center; /* Center all items */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically when visible */
+        width: 100%; /* Full width for links */
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when hamburger menu is clicked */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
 }
 
 /* Page fade-out effect */
@@ -50,16 +80,4 @@ body {
 
 body.fade-out {
     opacity: 0; /* Fades out */
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack logo and links */
-        align-items: center; /* Center everything */
-    }
-
-    .nav-links {
-        flex-direction: column; /* Stack links vertically */
-        gap: 10px; /* Adjust spacing for smaller screens */
-    }
 }
