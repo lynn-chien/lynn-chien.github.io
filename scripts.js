@@ -116,56 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const carousels = document.querySelectorAll(".carousel");
-
-//     carousels.forEach((carousel) => {
-//         const slides = carousel.querySelector(".carousel-slides");
-//         const images = slides.querySelectorAll("img");
-//         const prevButton = carousel.querySelector(".carousel-button.prev");
-//         const nextButton = carousel.querySelector(".carousel-button.next");
-
-//         let currentIndex = 0;
-
-//         // Dynamically set the total width of slides
-//         slides.style.width = `${images.length * 100}%`;
-
-//         // Ensure each image has the correct width
-//         images.forEach((img) => {
-//             img.style.width = `${carousel.clientWidth}px`; // Set image width to match carousel width
-//         });
-
-//         // Update the carousel position
-//         function updateCarousel() {
-//             const slideWidth = carousel.clientWidth; // Width of a single slide
-//             slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`; // Move to the current slide
-//         }
-
-//         // Navigate to the previous slide
-//         prevButton.addEventListener("click", () => {
-//             currentIndex = (currentIndex - 1 + images.length) % images.length;
-//             updateCarousel();
-//         });
-
-//         // Navigate to the next slide
-//         nextButton.addEventListener("click", () => {
-//             currentIndex = (currentIndex + 1) % images.length;
-//             updateCarousel();
-//         });
-
-//         // Initialize carousel position on page load
-//         updateCarousel();
-
-//         // Adjust carousel on window resize to ensure proper dimensions
-//         window.addEventListener("resize", () => {
-//             images.forEach((img) => {
-//                 img.style.width = `${carousel.clientWidth}px`; // Adjust image width on resize
-//             });
-//             updateCarousel();
-//         });
-//     });
-// });
-
 document.querySelectorAll('.carousel').forEach(carousel => {
     const images = carousel.querySelector('.carousel-images');
     const prevButton = carousel.querySelector('.prev');
