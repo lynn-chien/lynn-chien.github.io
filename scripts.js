@@ -187,8 +187,6 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       updateCarousel();
     });
   });
-  
-history.pushState({}, '', 'new-url'); // Change the URL without reloading
 
 window.addEventListener('popstate', (event) => {
     // Handle the back/forward navigation
