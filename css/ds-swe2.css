@@ -147,3 +147,7 @@ a:hover {
   color: #F3ABB6;
   transition: ease-in 0.3s;
 }
+
+.fg p {
+  font-size: 12px;
+}

@@ -8,6 +8,11 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
+window.addEventListener("popstate", (event) => {
+    // Handle the state change or reinitialize components
+    location.reload(); // Fallback: reloads the page to ensure content loads correctly
+  });
+  
 function loadNavbar() {
     return fetch("navbar.html") // Ensure the path to navbar.html is correct
         .then(response => {
