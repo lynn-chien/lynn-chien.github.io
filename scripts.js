@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     loadNavbar().then(highlightCurrentPage).catch(error => console.error(error));
 });
 
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
 function loadNavbar() {
     return fetch("navbar.html") // Ensure the path to navbar.html is correct
         .then(response => {
