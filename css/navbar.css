@@ -1,6 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-
 @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Flamenco:wght@300;400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
@@ -33,12 +31,12 @@
 .navigation-bar a:hover {
     color: #F3ABB6; /* Change color on hover */
     transition: color 0.5s; /* Smooth transition for hover */
-    font-weight: bold; /* Optional: Make it bold */
+    font-weight: bold;
 }
 
 .navigation-bar a.active {
     color: #F3ABB6; /* Highlight active link */
-    font-weight: bold; /* Optional: Make it bold */
+    font-weight: bold;
 }
 
 /* Hamburger Menu Styling */
@@ -80,4 +78,58 @@ body {
 
 body.fade-out {
     opacity: 0; /* Fades out */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button styling (matches nav links) */
+.dropbtn {
+    background: none;
+    border: none;
+    color: #A2A2A2;
+    font-size: 16px;
+    font-family: 'Amiko', sans-serif;
+    line-height: 80px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.dropbtn:hover {
+    color: #F3ABB6;
+    font-weight: bold;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    top: 80px; /* aligns dropdown below navbar */
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
